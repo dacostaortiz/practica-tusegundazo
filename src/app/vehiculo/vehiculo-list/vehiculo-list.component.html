@@ -1,18 +1,42 @@
-<table class="table">
-  <thead class="table-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Marca</th>
-      <th scope="col">Línea</th>
-      <th scope="col">Modelo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let vehiculo of vehiculos">
-      <th>{{ vehiculo.id }}</th>
-      <td>{{ vehiculo.marca }}</td>
-      <td>{{ vehiculo.linea }}</td>
-      <td>{{ vehiculo.modelo }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+  <div class="row">
+    <span class="title"><h1>TuSegundazo.com</h1></span>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <hr />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <img src="assets/banner.png" class="img" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <hr />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-7">
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Línea</th>
+            <th scope="col">Modelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vehiculo of vehiculos">
+            <th>{{ vehiculo.id }}</th>
+            <td>{{ vehiculo.marca }}</td>
+            <td>{{ vehiculo.linea }}</td>
+            <td>{{ vehiculo.modelo }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
